@@ -1,0 +1,89 @@
+#logo{
+        max-width: 500px;
+        height: auto;
+        border-bottom: 1px double #55c;       
+}
+
+nav li {
+        display:block;
+        width:80px;
+        float: left;
+}
+
+nav a {
+        color: #fff;
+        background: url(gray1.png) repeat-x bottom;
+        font-weight: bold;
+        display: block;
+        line-height: 1.0;
+        padding: 6px 0;
+        border-width: 1px 1px 1px 1px;
+        border-style: solid;
+        border-color: #fff;
+        text-align: center;
+        text-decoration: none;
+}
+
+nav a:hover {
+        background: url(blue1.png) repeat-x bottom;
+}
+
+nav #current a{
+        color: #55c;
+        background: #fff;
+        border-color: #000000;
+}
+
+#character{
+        width: 100px;
+        height: auto;
+}
+
+body{
+        background:#ffffff;
+        color: #000000;
+}
+
+#page {
+        margin: 0 auto;
+        width: 900px;
+}
+
+#main{
+        display: block;
+        float: left;
+        width: 900px;
+}
+
+h2{
+        border-width: 0px 0px 12px 0px;
+        border-style: solid;
+        border-color: #0000cd;
+        padding-left: 16px;
+}
+
+h3{
+        border-width: 0px 0px 2px 5px;
+        border-style: solid;
+        border-color: #0000cd;
+        padding-left: 10px;
+}
+
+section p{
+        background-color: #edf0f0;
+        padding-left: 22px;
+}
+
+footer{
+        clear: both;
+}
+
+#copyright{
+        font-size: 10px;
+        background-color: #d2e9ff;
+        color: #000000;
+        display: inline;
+        padding: 2px 10px;
+        border: 1px solid #000000;
+        border-radius: 10px;
+}
