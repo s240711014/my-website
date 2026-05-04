@@ -55,6 +55,13 @@ body{
         width: 900px;
 }
 
+#main li {
+        color: #8e8eff;
+}
+#main li a{
+        color: #8e8eff;
+}
+
 h2{
         border-width: 0px 0px 12px 0px;
         border-style: solid;

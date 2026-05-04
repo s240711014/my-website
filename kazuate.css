@@ -1,0 +1,32 @@
+header {
+  text-align: center;
+  margin-bottom: 3px;
+}
+
+.rule {
+  border: 2px solid #333;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 10px;
+}
+
+.rule h2 {
+  border-bottom: 2px dotted black;
+  margin: 5px;
+}
+
+.rule p {
+    margin: 2px 0;
+}
+
+.attention{
+    color: #ff0000;
+}
+
+.small{
+    font-size: small;
+}
+
+#count{
+    padding: 10px;
+}

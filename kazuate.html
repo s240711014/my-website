@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>数当てゲーム</title>
+<link rel="stylesheet" href="./kazuate.css">
+<script src="kazuate.js" type="text/javascript" defer></script>
+</head>
+
+<body>
+<div id="page">
+    <header>
+        <h1>数当てゲーム</h1>
+    </header>
+
+<div id="main">
+
+    <!--ルール-->
+    <section class="rule"> 
+        <h2>ルール</h2>
+        <p class="attention">ゲーム開始のボタンを必ず押してから数値を入力してください。</p>
+        <p>・1〜100の数字を入力し、当ててください。</p>
+        <p>・入力した数値が遠いか近いかヒントが出ます。</p>
+        <p class="small">※正解の値-入力値の絶対値を距離とし、その距離でヒントがでます。<br>
+           距離が0の時:正解! 50以上の時:全然違う 20~49の時:かなり違う 10~19の時:ちょっと違う 5~9の時:惜しい! 5未満の時：めちゃ惜しい!</p>
+        <p>・試行回数は10回までです。</p>
+    </section>
+
+    <!--ゲーム内容-->
+    <section class="game"> 
+     <button onclick="gamestart()">ゲーム開始</button><span id="count"></span>
+
+     <form>
+        <input id="num" placeholder="数字を入力">
+        <button type="button" onclick="judge()">OK</button>
+     </form>
+
+     
+     <p id="result"></p>
+
+     <img id="image" src="">
+    </section>
+
+</div>
+</div>
+</body>
+</html>
