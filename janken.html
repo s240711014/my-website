@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>じゃんけんゲーム</title>
+<script src="janken.js" type="text/javascript">
+</script>
+</head>
+
+<body>
+    <h1>じゃんけんゲーム</h1>
+    ルール:<br>
+    ゲーム開始ボタンを押したのち、「グー、チョキ、パー」から選択してください。<br>
+    OKを押すとジャンケンをします。3回連続でかったらあなたの勝ちです。12回までに勝てなければあなたの負けです。<br>
+    終了後は、リスタートを押したのちに、ゲーム開始を再度押してください。<br>
+     
+    <hr>
+    <button id="startbtn" onclick="init()">ゲーム開始</button>
+    <br>
+    ジャンケンの手を選択してください
+    <input type="radio" name="jk" value="0">グー
+    <input type="radio" name="jk" value="1">チョキ
+    <input type="radio" name="jk" value="2">パー
+    <button id="OKbtn" onclick="judge()">OK</button>
+    <br>
+    <button id="restartbtn" onclick="init2()" style="display:none;">リスタート</button>
+    <span id="result"></span>
+</body>
+</html>
