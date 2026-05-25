@@ -8,7 +8,31 @@
 </head>
 
 <body onload="init()">
+
+    <h1>マップエディタ(もどき)</h1>
+    
     <table id="board"></table>
     <h2 id="info"></h2>
+
+    <div id="area"> 
+    <!--通路の画像の選択画面(表示用)-->
+        <p>通路</p>
+        <img src="chipA.png" class="selectChip">
+        <img src="chipB.png" class="selectChip">
+        <img src="chipC.png" class="selectChip">
+        <img src="chipD.png" class="selectChip">
+        <img src="chipE.png" class="selectChip">
+    <!--壁の画像の選択画面(表示用)-->
+        <p>壁</p>
+        <img src="chipA1.png" class="selectChip">
+        <img src="chipB1.png" class="selectChip">
+        <img src="chipC1.png" class="selectChip">
+        <img src="chipD1.png" class="selectChip">
+    </div>
 </body>
 </html>
+
+<!--工夫点
+　　・道路と壁を好きな物を選択してマップに配置できるようにした
+　　　：class=selectChipで選択情報を管理し、jsでクリック時に情報を所得し、
+　　　　マップをクリックしたときに反映されるように変数selectを作成(それに伴う関数も作成)-->

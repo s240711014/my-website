@@ -2,6 +2,16 @@
 table{
     border-collapse: collapse;
 }
+
+h1{
+    text-align: center;
+}
+
+/*マップ*/
+#board{
+    margin:auto;
+}
+
 /*余白をなくす*/
 td{
     padding: 0px;
@@ -13,6 +23,19 @@ td{
     height: 35px;
 }
 
+/*座標*/
 #info{
     display:none;
+}
+
+/*選択画面*/
+#area{
+    text-align: center;
+}
+.selectChip{
+    width: 32px;
+    height: 32px;
+    margin: 4px;
+    border: 1px solid black;
+    cursor: pointer;
 }
