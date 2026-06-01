@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>ラックナンバーサーチ</title>
+        <script src="numbersearch.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <h1>ラックナンバーサーチ</h1>
+        <p id=max>数列の最大値(3~9)を入力してください。<input type="number" id="maxnum"></p>
+        <p>欠けている数字を入力してください <button onclick="start()">START</button></p>
+        <p>
+            <span id ="question1"></span>
+            　
+            <span id="ans1"></span>
+        </p>
+        <p id = "time"></p>
+        <p id = "memory"></p>
+    </body>
+</html>
+
+<!--工夫点
+    ・履歴表示
+    　：正解したら正解した問題と答えが表示され次の問題が出題される
+    　　この時に、シャッフル時に数列と答えを取得し、正解時に上から第１問、２問と表示されるようにした。
+    ・STARTボタンを押すと、全てが初期化され一からゲームを行える。
+    ・2～9の数値をプレイヤー側で設定させて難易度を変える。-->
