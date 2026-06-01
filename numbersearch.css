@@ -1,0 +1,28 @@
+body{
+    text-align: center;      
+    font-family: sans-serif;
+}
+
+#question1{
+    font-size: 32px;        
+    font-weight: bold;
+}
+
+#ans1{
+    font-size: 24px;
+}
+
+#time{
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+#memory{
+    margin-top: 30px;
+    border: 2px solid black;
+    padding: 10px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
