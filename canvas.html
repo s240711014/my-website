@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>未入力</title>
+<link rel="stylesheet" href="./canvas.css">
+</head>
+<body onload="init()">
+    <h1>鯉のぼり</h1>
+    <p>開始を押すと、鯉のぼりが空を泳ぎます。停止で止まります。</p>
+    <canvas id ="canvas" width="400" height="350"></canvas><br>
+    <button onclick="startTimer()">開始</button>
+    <button onclick="stopTimer()">停止</button>
+    <script src="canvas.js" type="text/javascript"></script>
+</body>
+</html>
+
+<!--工夫点
+　今回は、鯉のぼりが空を泳ぐアニメーションを作成することにしました。
+　それに伴い、画像ではなく図形を利用して鯉のぼりを作成しました。
+　特に尾びれに動きをつけ、泳いでいる様子を作成しました。
+
+　以下、他の工夫点
+　・鯉を作成する関数と尾びれは別に関数を作成
+　　：目と胴体と尾びれをそれぞれ関数で作成
+
+　・尾びれの動き(回転の動作を行ったり来たりさせる)を作成
+　　：回転させる方向を一定の数値まで来たら符号を反転　→上下運動
+
+　・鯉のぼりの色をランダムで変更
+　　：色の配列を作成→画面から消えたタイミングで色の抽選
+-->
