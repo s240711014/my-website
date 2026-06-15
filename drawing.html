@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=320, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>タッチした場所への描画</title>
+<link rel="stylesheet" href="drawing.css">
+</head>
+<body onload="init()">
+<h1>お絵描きキャンパス</h1>
+<canvas id="canvas" width="320" height="480"></canvas>
+
+<div id="tools">
+ <p>
+    色：<input type="color" id="colorPicker" value="#ff0000">
+</p>
+ <p>
+    太さ：<input type="range" id="sizeSlider" min="1" max="100" value="10">
+ <span id="sizeText">10</span>px
+</p>
+<p>
+ ペン先：
+ <button onclick="circlePen()">●</button>
+ <button onclick="linePen()">■</button>
+ <button onclick="trianglePen()">▲</button>
+</p>
+
+<p><button onclick="clearCanvas()">リセット</button></p>
+</div>
+
+<script src="drawing.js" type="text/javascript"></script>
+</body>
+</html>
+
+<!--
+　工夫点
+・色の変更
+　：カラーピッカ―方式で色を変更
+　　色の値をjs側に送って、js側では変更時の色をevent.target.valueで取得
+
+・太さの変更
+　：スライダー方式で太さを変更
+　　最小値１から最大値１００のスライダーで太さの変更
+　　太さが分かりやすいよう現在の太さをスライダー横に表示
+
+・ペン先の変更
+　：図形の書かれたボタンを用意し押して変更
+　　ペン先の変数がそれぞれの形になる関数を作成し、ボタンを押して呼び出す。-->
