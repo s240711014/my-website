@@ -1,0 +1,5 @@
+#maze {
+        width: 900px;
+        height: 600px;
+        touch-action: none;
+}
