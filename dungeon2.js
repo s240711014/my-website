@@ -368,6 +368,7 @@ function Player(x, y) {
                     }
                 }else{
                     alert("鍵が足りません！");
+                    keyCode = 0;
                 }
             }
         }
